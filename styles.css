@@ -214,64 +214,82 @@
     }
   }
 
-  #projects {
-    background: linear-gradient(90deg, #051065, #0c4a74); /* Gradient background */
-    color: white;
-  }
+/* Background Gradient for Projects Section */
+#projects {
+  background: linear-gradient(90deg, #051065, #0c4a74); /* Smooth blue gradient */
+  color: white;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
 
-  /* Centering the Project Container */
-  .project-container {
-    position: relative;
-    max-width: 600px;
-    margin: auto;
-  }
+/* Card Styling */
+.card {
+  background: rgba(255, 255, 255, 0.05); /* Light transparent background */
+  border: 2px solid rgba(0, 123, 255, 0.6); /* Soft blue border with RGB alpha */
+  border-radius: 15px;
+  color: white;
+  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.25); /* Glowing blue shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+}
 
-  /* Project Cards */
-  .project-card {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: max-content;
-    opacity: 0;
-    transition: opacity 0.8s ease-in-out, transform 0.5s ease-in-out;
-    transform: translateY(20px);
-    
-    
-  }
+/* Optional Hover Enhancement */
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 25px rgba(0, 123, 255, 0.4); /* Brighter shadow on hover */
+  border: 2px solid rgba(0, 195, 255, 0.8); /* Brighter border on hover */
+}
 
-  /* Show the Active Card */
-  .project-card.active {
-    opacity: 1;
-    transform: translateY(0);
-    position: relative;
-  }
 
-  /* Navigation Buttons */
-  .project-nav {
-    margin-top: 20px;
-  }
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
 
-  .project-nav button {
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    font-size: 18px;
-    cursor: pointer;
-    border-radius: 50%;
-    margin: 5px;
-    background-color: #051065;
-    transition: 0.3s;
-    
-  }
+/* Card Image */
+.card-img-top {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  object-fit: cover;
+  height: 200px;
+}
 
-  .project-nav button:hover {
-    background: #008C9E;
-  }
+/* Card Body */
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Gradient Button */
+.gradient-btn {
+  background: linear-gradient(45deg, #6a11cb, #2575fc);
+  color: white;
+  border: none;
+  font-size: 0.85rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  transition: 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+.gradient-btn:hover {
+  background: linear-gradient(45deg, #2575fc, #6a11cb);
+  transform: scale(1.05);
+  color: #fff;
+}
+
+/* Responsive Text Centering */
+#projects .text-center h2 {
+  color: #fff;
+}
+
+/* Optional: Decorative Horizontal Lines beside title */
+.line {
+  flex: 1;
+  height: 2px;
+  background: white;
+  margin: 0 10px;
+}
+
 
   .social-icon {
     display: flex;
