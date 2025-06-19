@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let message = document.getElementById("message").value;
 
     // Telegram Bot API
-    let botToken = "7744598630:AAH0uqkukP07EobVrLWGLXdKwO_AVdTAiiQ"; // Replace with your Telegram bot token
+    let botToken = "telegram chat id: token"; // Replace with your Telegram bot token
     let chatId = "5287470438"; // Replace with your Telegram chat ID
     let telegramURL = `https://api.telegram.org/bot${botToken}/sendMessage`;
 
